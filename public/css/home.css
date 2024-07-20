@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width:100%;
+    min-height:100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto' , sans-serif;
+}
+.container{
+    position: relative;
+    width: 90%;
+    height: 87vh;
+    border:5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logout{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline:none;
+    border: none;
+}
+.greeting{
+    font-family: 'dosis';
+    font-size: 100px;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    color: #fff;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    transform:translateY(-50%);
+    transition: top 0.5s ease-out;
+}
+.greeting.up{
+    top: 5%;
+    transform: translateY(0);
+}
+.user-grid{
+    position: absolute;
+    display: flex;
+    top: 27%;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'dosis';
+    color: #fff;
+}
+table {
+    width: 50%;
+    padding-top: 100px;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #a8a6a6;
+    text-align: center;
+}
+td {
+    text-align: center;
+    color: #ddd;
+}
+button{
+    background: none;
+    border: none;
+    color: #b7cbea;
+    
+}
+button:hover{
+    color: #ddd;
+    cursor: pointer;
+}
+#userGridContainer{
+    display: none;
+}
+#Show{
+    position: absolute;
+    display: flex;
+    top: 70%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'dosis';
+    
+}
+#Show:hover{
+    cursor: pointer;
+}
